@@ -1,0 +1,30 @@
+#main {
+  width: 97%;
+}
+#main p, #main div {
+  color: #000;
+}
+#main p a, #main div a {
+  text-decoration: none;
+}
+#main p a:hover, #main div a:hover {
+  text-decoration: underline;
+}
+#main p a:visited, #main div a:visited {
+  color: purple;
+}
+
+#conteudo {
+  width: 97%;
+}
+#conteudo-principal {
+  color: #000;
+}
+#conteudo_secundario {
+  color: #000;
+}
+#conteudo-final {
+  color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */

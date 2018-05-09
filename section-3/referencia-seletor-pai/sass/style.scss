@@ -1,0 +1,27 @@
+#main {
+  width: 97%;
+  p, div {
+    color: #000;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:visited {
+        color: purple;
+      }
+    }
+  }
+}
+#conteudo {
+  width: 97%;
+  &-principal {
+    color: #000;
+  }
+  &_secundario {
+    color: #000;
+  }
+  &-final {
+    color: #000;
+  }
+}
