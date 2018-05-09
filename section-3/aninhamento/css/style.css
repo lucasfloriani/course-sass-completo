@@ -1,0 +1,18 @@
+#main {
+  width: 97%;
+}
+#main p, #main div {
+  color: #000;
+}
+#main p a, #main div a {
+  text-decoration: none;
+}
+#main p a:hover, #main div a:hover {
+  text-decoration: underline;
+}
+#main h1 {
+  font-size: 150%;
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

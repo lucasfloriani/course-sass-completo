@@ -1,0 +1,16 @@
+#main {
+  width: 97%;
+  p, div {
+    color: #000;
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  h1 {
+    font-size: 150%;
+    color: red;
+  }
+}
