@@ -1,0 +1,19 @@
+// Interpolação é a tecnica de utilizar uma variável como texto CSS
+// Sintaxe #{$variavel}
+// Usado para pegar os valores das variáveis em comentários,
+// seletores e propriedades
+
+$versao: '1.0';
+$data: '28/04/2018';
+$class: sidebar;
+$red: #FF0000;
+$propriedade: border;
+/* Folha de estilo
+Versão #{$versao}
+Data: $data // Traz somente o nome da variavel e não o valor quando sem interpolação
+*/
+aside.#{$class} {
+  width: 20%;
+  color: #{$red}; // ou color: $red
+  #{$propriedade}-color: black;
+}

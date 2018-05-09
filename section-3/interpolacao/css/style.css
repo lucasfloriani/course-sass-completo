@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* Folha de estilo
+Vers├úo 1.0
+Data: $data // Traz somente o nome da variavel e n├úo o valor quando sem interpola├º├úo
+*/
+aside.sidebar {
+  width: 20%;
+  color: #FF0000;
+  border-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
