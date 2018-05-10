@@ -1,0 +1,32 @@
+@charset "UTF-8";
+h1 {
+  color: red;
+  color: red;
+  color: red; }
+
+/*! Escopo de vari├ível*/
+#main {
+  width: 5em;
+  color: black; }
+
+#sidebar {
+  width: 8em;
+  color: red; }
+
+#main {
+  width: 5em;
+  color: black; }
+
+#sidebar {
+  width: 8em;
+  color: black; }
+
+#main {
+  width: 5em;
+  color: black; }
+
+#sidebar {
+  width: 8em;
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */

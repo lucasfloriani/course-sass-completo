@@ -1,0 +1,61 @@
+// Variavel pode ser declarada com - ou _ porem serão consideradas variaveis iguais
+$teste_de_cor: #fff;
+$teste-de-cor: #fff; // Mesma variavel, substitui o valor da anterior
+
+$red: red; // Não é uma boa prática
+$cor-titulo: red; // é uma um pouco melhor prática
+$cor-principal: red; // Nome mais genérico == melhor prática
+h1 {
+  color: $red;
+  color: $cor-titulo;
+  color: $cor-principal;
+}
+
+
+/*! Escopo de variável*/
+$cor: red;
+$width: 8em;
+#main {
+  $width: 5em;
+  $cor: black;
+  width: $width; // 5em
+  color: $cor; // black
+}
+#sidebar {
+  width: $width; // 8em
+  color: $cor // red
+}
+
+// VARIAVEL GLOBAL
+// Se quiser fazer a variavel local substituir a global
+// é só adicionar !global ao final da criação da variavel
+// que ela ira assim substituir.
+$cor: red;
+$width: 8em;
+#main {
+  $width: 5em;
+  $cor: black !global;
+  width: $width; // 5em
+  color: $cor; // black
+}
+#sidebar {
+  width: $width; // 8em
+  color: $cor // black
+}
+
+// VARIAVEL DEFAULT
+// Troca o valor da variavel somente se ela não tiver valor
+// atribuido
+$cor: red;
+$largura: 8em;
+$largura: 30em !default;
+#main {
+  $largura: 5em;
+  $cor: black;
+  width: $largura; // 5em
+  color: $cor; // black
+}
+#sidebar {
+  width: $largura; // 8em e não 30em
+  color: $cor // red
+}
