@@ -1,0 +1,16 @@
+%primeiro-componente-pai {
+  color: red;
+}
+%segundo-componente-pai {
+  font-size: 14px;
+}
+%terceiro-componente-pai {
+  @extend %segundo-componente-pai;
+  line-height: 1;
+}
+
+.componente-filho {
+  @extend %primeiro-componente-pai;
+  @extend %terceiro-componente-pai;
+  background: black;
+}
