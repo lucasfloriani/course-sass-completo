@@ -1,6 +1,7 @@
 # Operações com números
 
 ```sass
+20px + 40 // Resulta em 60px
 20px + 6px // Resulta em 26px
 20px + 6em // SyntaxError
 20% + 6% // Resulta em 26%
