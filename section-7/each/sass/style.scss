@@ -1,0 +1,8 @@
+$lista: green, yellow, blue, black;
+$cont: 1;
+@each $color in $lista {
+  div.item-#{$cont}{
+    background-color: $color;
+  }
+  $cont: $cont + 1;
+}
