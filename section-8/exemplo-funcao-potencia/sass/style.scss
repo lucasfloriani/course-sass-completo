@@ -1,0 +1,20 @@
+@function potencia($base, $expoente: 2, $unid: px) {
+  $cont: 1;
+  $resultado: $base;
+  @while $cont < $expoente {
+    $resultado: $resultado * $base;
+    $cont: $cont + 1;
+  }
+
+  @return $resultado + (#{$unid});
+}
+
+h1 {
+  font-size: potencia(2, 4);
+}
+h2 {
+  font-size: potencia(2, 2, em);
+}
+h3 {
+  font-size: potencia(2);
+}
