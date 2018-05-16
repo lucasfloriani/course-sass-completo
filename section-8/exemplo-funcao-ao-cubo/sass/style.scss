@@ -1,0 +1,14 @@
+@function cubo($numero, $unid: px) {
+  $res: $numero * $numero * $numero;
+  @return $res + (#{$unid});
+}
+
+h1 {
+  font-size: cubo(3);
+}
+h2 {
+  font-size: cubo(2, em);
+}
+h3 {
+  font-size: cubo(2, '%');
+}
