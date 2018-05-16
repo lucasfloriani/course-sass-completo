@@ -1,0 +1,7 @@
+$cont: 1;
+@while $cont < 4 {
+  div.item-#{$cont} {
+    background: #F23 * $cont;
+  }
+  $cont: $cont + 1;
+}
