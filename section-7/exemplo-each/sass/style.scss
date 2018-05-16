@@ -1,0 +1,15 @@
+@each $thema in manha, tarde, noite, dia {
+  @if $thema == manha {
+    $background: white !global;
+  } @else if $thema == tarde {
+    $background: blue !global;
+  } @else if $thema == noite {
+    $background: black !global;
+  } @else {
+    $background: grey !global;
+  }
+
+  .bg-#{$thema} {
+    background-color: $background;
+  }
+}
