@@ -1,0 +1,7 @@
+@for $i from 1 to 6 {
+
+  .bg-#{$i} {
+    background-color: #123 * $i + 2;
+  }
+
+}
